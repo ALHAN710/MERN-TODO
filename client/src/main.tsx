@@ -1,0 +1,20 @@
+import { StyledEngineProvider } from "@mui/material";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { ContextProvider } from "./context/ContextAPI";
+
+// import "./assets/bootstrap/css/bootstrap.min.css";
+
+// import "./assets/layouts/vertical-light-menu/css/light/plugins.css"
+// import "./assets/layouts/vertical-light-menu/css/dark/plugins.css"
+
+import "./index.css";
+
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+  // <StyledEngineProvider injectFirst>
+  <ContextProvider>
+    <App />
+  </ContextProvider>
+  // </StyledEngineProvider>
+);
