@@ -2,14 +2,14 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="footer-wrapper mt-0">
+    <div className="footer-wrapper mt-0 flex flex-col justify-center items-center md:flex-row md:justify-between">
       <div className="footer-section f-section-1">
         <p className="">
           Copyright © <span className="dynamic-year">2023</span> , All rights
           reserved.
         </p>
       </div>
-      <div className="footer-section f-section-2">
+      <div className="footer-section">
         <p className="">
           Coded with{" "}
           <svg
